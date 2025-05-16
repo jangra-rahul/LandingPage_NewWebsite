@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import { Col, Row } from "react-bootstrap";
 import about_img_1 from "../../assets/images/png/about_img.png";
-import about_img_2 from "../../assets/images/png/about_img.png"; // second image
+import about_img_2 from "../../assets/images/png/about_img1.jpg"; // second image
 import left_arrow from "../../assets/images/png/left_icon.svg";
 import right_arrow from "../../assets/images/png/right_icon.svg";
 import "slick-carousel/slick/slick.css";
@@ -10,17 +10,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
   {
-    name: "Cameron Williamson",
+    name: "Mohit Kaur",
     title: "Founder Gojek Corp.",
-    text: `Kerjarodi.com is an application for job seekers and workers who
+    text: `VEDGURU is an application for job seekers and workers who
     prioritize user comfort and the quality of services provided by our team`,
     image: about_img_1,
   },
   {
-    name: "Jenny Wilson",
+    name: "Anjali Mehta",
     title: "CEO Uber",
-    text: `The platform is easy to use and helps me find talented people fast.
-    I love the UI and responsiveness.`,
+    text: `VEDGURU helped me connect with top astrologers in my language. The live sessions are amazing and really insightful. Highly recommend!`,
     image: about_img_2,
   },
 ];
@@ -47,21 +46,25 @@ const AboutSection = () => {
             <div key={index}>
               <Row className="align-items-center">
                 <Col lg={4} className="mb-4 mb-lg-0">
-                  <img className="w-100" src={item.image} alt="about_img" />
+                  <img
+                    height={650}
+                    className="w-100  object-fit-cover rounded-4"
+                    src={item.image}
+                    alt="about_img"
+                  />
                 </Col>
                 <Col lg={8}>
-                  <h3 className="text-black fs_60 mb-0 ff fw-semibold">
-                    What do they{" "}
-                    <span style={{ color: "#ED8E1F" }}>think about</span>
-                    <br className="d-none d-lg-block" />
-                    <span style={{ color: "#1A6F8A" }}> our App?</span>
+                  <h3 className="text-black text-capitalize fs_60 mb-0 ff fw-semibold">
+                    What makes
+                    <span style={{ color: "#FF6900" }}> VEDGURU </span>
+                    special?
                   </h3>
                   <h4 className="ff fs_32 fw-semibold mb-0 mt-4">
                     {item.name}
                   </h4>
-                  <p className="ff fs_16 text_gray fw-normal mb-0 mt-2">
+                  {/* <p className="ff fs_16 text_gray fw-normal mb-0 mt-2">
                     {item.title}
-                  </p>
+                  </p> */}
                   <div
                     className="bg-white p-4 rounded-2 mt-4"
                     style={{ maxWidth: "400px" }}

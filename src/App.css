@@ -18,9 +18,9 @@ body {
 
 :root {
   --fs-xs: 16px;
-  --fs-sm: 20px;
+  --fs-sm: 16px;
   --fs-md: 32px;
-  --fs-lg: 60px;
+  --fs-lg: 55px;
   --clr-gray: #9e9e9e;
 }
 
@@ -47,10 +47,10 @@ body {
   transition: all 300ms ease-in-out;
 }
 .hovermanue:hover {
-  color: #ed8e1f;
+  color: #ff6900;
 }
 .custom_btn {
-  background-color: #ed8e1f;
+  background-color: #ff6900;
   color: white;
   padding: 10px 30px;
   border: none;
@@ -64,15 +64,15 @@ body {
 }
 
 .get-started-btn {
-  border-width: 0px, 0px, 0px, 0px;
-  border-style: solid;
-  border-color: #ed8e1f;
-  color: #ed8e1f;
+  border-width: 0px, 0px, 0px, 0px !important;
+  border-style: solid !important;
+  border-color: #ff6900 !important;
+  color: #ff6900 !important;
   background-color: transparent !important;
 }
 
 .hero-img {
-  margin-bottom: -100px;
+  margin-bottom: -150px;
 }
 
 .card_box {
@@ -87,6 +87,16 @@ body {
   border-radius: 10px;
 }
 
+.z-2 {
+  z-index: 2;
+}
+.z-3 {
+  z-index: 3;
+}
+
+.list {
+  list-style-type: disc !important;
+}
 @media (max-width: 991px) {
   .hero-img {
     margin-bottom: 0px;
@@ -104,7 +114,7 @@ body {
     --fs-xs: 16px;
     --fs-sm: 16px;
     --fs-md: 22px;
-    --fs-lg: 35px;
+    --fs-lg: 21px;
     --clr-gray: #9e9e9e;
   }
 }

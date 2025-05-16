@@ -1,6 +1,6 @@
 import React from "react";
 import CustomNavbar from "../common/CustomNavbar";
-import phone_imgs from "../../assets/images/png/screenImg.png";
+import phone_imgs from "../../assets/images/png/screenImg1.png";
 
 const Hero = () => {
   return (
@@ -9,20 +9,20 @@ const Hero = () => {
       className="min-vh-100 position-relative overflow-hidden"
     >
       <CustomNavbar />
-      <div className="container pt-lg-5 pt-3 d-flex flex-column flex-lg-row align-items-center justify-content-between">
+      <div className="container pt-xl-1 d-flex flex-column flex-lg-row align-items-center justify-content-between">
         {/* Left Section */}
         <div className="hero-left text-center text-lg-start mb-4 mb-lg-0">
           <h1 className="text-white fs_60 mb-0 ff fw-semibold">
-            Easy to find a <span style={{ color: "#ED8E1F" }}>Job</span> and{" "}
-            <br className="d-none d-lg-block" />
-            <span style={{ color: "#1A6F8A" }}>Worker</span> with Us
+            Easy to Connect with <br className="d-none d-lg-block" /> Trusted{" "}
+            <span style={{ color: "#FF6900" }}>Astrologers</span>
           </h1>
-          <p className="fs_20 text_gray ff fw-normal my-4">
-            We help you find the right job or worker for you. Don’t worry, we
-            provide <br className="d-none d-lg-block" />
-            satisfactory service for you. Let’s try it now!
+          <p className="fs_20 text_gray ff fw-normal my-3">
+            We help you find the right astrologer and divine guidance in just a
+            few taps. <br className="d-none d-lg-block" /> From expert
+            consultations to authentic spiritual items – it's all here.
           </p>
-          <button className="get-started-btn mt-2 px-4 py-2 rounded-2">
+
+          <button className="custom_btn mt-2 px-4 py-2 rounded-2">
             Get Started&nbsp; →
           </button>
         </div>

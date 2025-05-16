@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/svg/logo.svg";
+import black_logo from "../../assets/images/svg/black_logo.svg";
 import { Offcanvas } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -9,12 +10,12 @@ const CustomNavbar = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <div className="py-4">
+    <div style={{ background: "#211E1B" }} className="py-4">
       <div className="container">
         <div className="d-flex align-items-center justify-content-between">
           <div className="d-flex align-items-center gap-5">
             <a href="#">
-              <img height={36} src={logo} alt="web logo" />
+              <img height={60} src={logo} alt="web logo" />
             </a>
             <ul className="mb-0 ps-0 d-lg-flex d-none align-items-center gap-lg-5 gap-3">
               <li>
@@ -53,14 +54,7 @@ const CustomNavbar = () => {
           </div>
           <div className="d-md-flex d-none align-items-center gap-3">
             <button className=" fs_16 fw-semibold rounded-2  custom_btn ff  border-0">
-              Sign In
-            </button>
-            <div
-              className="border border-1"
-              style={{ height: "30px", borderColor: "#474747" }}
-            ></div>
-            <button className=" fs_16 fw-semibold rounded-2 transparent_btn ff   border-0">
-              Sign Up
+              Download App
             </button>
           </div>
           <div className="d-lg-none">
@@ -81,7 +75,7 @@ const CustomNavbar = () => {
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
-            <img height={30} src={logo} alt="web logo" />
+            <img height={60} src={black_logo} alt="web logo" />
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>

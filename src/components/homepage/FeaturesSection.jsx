@@ -26,48 +26,46 @@ const FeaturesSection = () => {
       />
       <div className="container position-relative z-index-1 pt-md-5">
         <div className="d-lg-flex align-items-center justify-content-between ">
-          <h3 className=" text-center text-lg-start fs_60 mb-0 ff fw-semibold">
-            We provide <span style={{ color: "#ED8E1F" }}>excellent</span>{" "}
-            <br className="d-none d-lg-block" />
-            <span style={{ color: "#1A6F8A" }}>features</span> from us
+          <h3 className=" text-center text-capitalize text-lg-start fs_60 mb-0 ff fw-semibold">
+            Experience the Best with <br className="d-none d-lg-block" />
+            <span style={{ color: "#FF6900" }}> VEDGURU’s</span> Unique Features
           </h3>
-          <p className="fs_20 text-center text-lg-start mt-3 mt-lg-0 text_gray ff fw-normal mb-0">
-            We shall never deny a guest, even the most ridiculous{" "}
-            <br className="d-none d-lg-block" /> request. We provide excellent
-            features from us
-          </p>
         </div>
         <Row className="mt-4">
           <Col md={6} className="mt-4">
             <div className="card_box p-4">
               <img width={48} src={icon1} alt="icon1" />
-              <h4 className=" fs_32 ff fw-semibold mb-0 mt-3">Job Search</h4>
+              <h4 className=" fs_32 ff fw-semibold mb-0 mt-3">
+                Live Astrologer Access
+              </h4>
               <p className=" mb-0 fs_20 text_gray ff fw-normal mt-3">
-                Kerjarodi.com is an application for job seekers and workers who
-                prioritize user comfort and the quality of services provided by
-                our team
+                Connect instantly with top astrologers available live — get
+                real-time guidance on love, career, health, and more.
               </p>
             </div>
           </Col>
           <Col md={6} className="mt-4">
             <div className="card_box p-4">
               <img width={48} src={icon2} alt="icon1" />
-              <h4 className=" fs_32 ff fw-semibold mb-0 mt-3">Worker Search</h4>
+              <h4 className=" fs_32 ff fw-semibold mb-0 mt-3">
+                Multi-Language Chat Support
+              </h4>
               <p className=" mb-0 fs_20 text_gray ff fw-normal mt-3">
-                Kerjarodi.com is an application for job seekers and workers who
-                prioritize user comfort and the quality of services provided by
-                our team
+                Chat with astrologers in your preferred language including
+                Hindi, English, and Punjabi — enhancing comfort and clarity in
+                conversations.
               </p>
             </div>
           </Col>
           <Col md={6} className="mt-4">
             <div className="card_box p-4">
               <img width={48} src={icon3} alt="icon1" />
-              <h4 className=" fs_32 ff fw-semibold mb-0 mt-3">Message</h4>
+              <h4 className=" fs_32 ff fw-semibold mb-0 mt-3">
+                Verified Expert Profiles & Reviews
+              </h4>
               <p className=" mb-0 fs_20 text_gray ff fw-normal mt-3">
-                Kerjarodi.com is an application for job seekers and workers who
-                prioritize user comfort and the quality of services provided by
-                our team
+                Get complete transparency with verified astrologer profiles,
+                detailed expertise tags, and genuine user reviews and ratings.
               </p>
             </div>
           </Col>
@@ -75,12 +73,11 @@ const FeaturesSection = () => {
             <div className="card_box p-4">
               <img width={48} src={icon4} alt="icon1" />
               <h4 className=" fs_32 ff fw-semibold mb-0 mt-3">
-                Dark mode theme
+                Gift an Experience
               </h4>
               <p className=" mb-0 fs_20 text_gray ff fw-normal mt-3">
-                Kerjarodi.com is an application for job seekers and workers who
-                prioritize user comfort and the quality of services provided by
-                our team
+                Send personalized gifts to astrologers during chats — add a
+                thoughtful touch to your spiritual journey and support.
               </p>
             </div>
           </Col>
