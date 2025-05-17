@@ -5,6 +5,7 @@ import HomePage from "./page/HomePage";
 import Footer from "./components/common/Footer";
 import PrivacyPolicy from "./page/PrivacyPolicy";
 import TermsConditions from "./page/TermsConditions";
+import RefundPolicy from "./page/RefundPolicy";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsConditions />} />
+        <Route path="/refund" element={<RefundPolicy />} />
       </Routes>
       <Footer />
     </>

@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import { Col, Row } from "react-bootstrap";
-import about_img_1 from "../../assets/images/png/about_img.png";
-import about_img_2 from "../../assets/images/png/about_img1.jpg"; // second image
+import about_img from "../../assets/images/svg/image1.png";
+import about_img3 from "../../assets/images/png/satyam.jpeg";
+import about_img_1 from "../../assets/images/png/image.png";
+import about_img_4 from "../../assets/images/svg/image.png"; // second image
 import left_arrow from "../../assets/images/png/left_icon.svg";
 import right_arrow from "../../assets/images/png/right_icon.svg";
 import "slick-carousel/slick/slick.css";
@@ -10,17 +12,24 @@ import "slick-carousel/slick/slick-theme.css";
 
 const testimonials = [
   {
-    name: "Mohit Kaur",
-    title: "Founder Gojek Corp.",
-    text: `VEDGURU is an application for job seekers and workers who
-    prioritize user comfort and the quality of services provided by our team`,
+    name: "Pradeep Sharma",
+    text: `VEDGURU helped me find clarity during a difficult phase. The astrologer's guidance felt personal, spiritual, and deeply accurate.`,
+    image: about_img,
+  },
+  {
+    name: "Vijender Singh",
+    text: `Connecting with VEDGURU was a turning point for me. The remedies and insights I received truly brought peace and direction to my life.`,
     image: about_img_1,
   },
   {
-    name: "Anjali Mehta",
-    title: "CEO Uber",
-    text: `VEDGURU helped me connect with top astrologers in my language. The live sessions are amazing and really insightful. Highly recommend!`,
-    image: about_img_2,
+    name: "Satyam Ahuja",
+    text: `From daily guidance to live sessions, VEDGURU is my trusted companion for spiritual and astrological support. Highly recommended!`,
+    image: about_img3,
+  },
+  {
+    name: "Rahul Jangra",
+    text: `VEDGURU’s astrologers not only predict but explain — I’ve gained a deeper understanding of myself and my journey through their sessions.`,
+    image: about_img_4,
   },
 ];
 
@@ -39,7 +48,7 @@ const AboutSection = () => {
   };
 
   return (
-    <div style={{ background: "#EEF3F7" }} className="py-5">
+    <div id="testimonial" style={{ background: "#EEF3F7" }} className="py-5">
       <div className="container py-md-5">
         <Slider ref={sliderRef} {...settings}>
           {testimonials.map((item, index) => (
@@ -47,7 +56,7 @@ const AboutSection = () => {
               <Row className="align-items-center">
                 <Col lg={4} className="mb-4 mb-lg-0">
                   <img
-                    height={650}
+                    height={550}
                     className="w-100  object-fit-cover rounded-4"
                     src={item.image}
                     alt="about_img"

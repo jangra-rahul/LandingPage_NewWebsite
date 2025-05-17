@@ -9,7 +9,7 @@ import blue_shadow from "../../assets/images/svg/blue_shadow.svg";
 
 const FeaturesSection = () => {
   return (
-    <div className="py-5 position-relative">
+    <div id="featured" className="py-5 position-relative">
       <img
         width={600}
         height={600}

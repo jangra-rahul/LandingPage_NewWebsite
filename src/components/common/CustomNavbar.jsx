@@ -3,6 +3,7 @@ import logo from "../../assets/images/svg/logo.svg";
 import black_logo from "../../assets/images/svg/black_logo.svg";
 import { Offcanvas } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const CustomNavbar = () => {
   const [show, setShow] = useState(false);
@@ -14,42 +15,33 @@ const CustomNavbar = () => {
       <div className="container">
         <div className="d-flex align-items-center justify-content-between">
           <div className="d-flex align-items-center gap-5">
-            <a href="#">
-              <img height={60} src={logo} alt="web logo" />
-            </a>
+            <Link to="/">
+              <a href="#">
+                <img height={60} src={logo} alt="web logo" />
+              </a>
+            </Link>
             <ul className="mb-0 ps-0 d-lg-flex d-none align-items-center gap-lg-5 gap-3">
-              <li>
-                <a
-                  className="fs_16 ff fw-semibold text_gray hovermanue"
-                  href="#"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  className="fs_16 ff fw-semibold text_gray hovermanue"
-                  href="#"
-                >
-                  About us
-                </a>
-              </li>
-              <li>
-                <a
-                  className="fs_16 ff fw-semibold text_gray hovermanue"
-                  href="#"
-                >
+              <Link to="/">
+                <li>
+                  <a
+                    className="fs_16 ff fw-semibold text_gray hovermanue"
+                    href="#"
+                  >
+                    Home
+                  </a>
+                </li>
+              </Link>
+
+              <Link to={`/#featured`}>
+                <a className="fs_16 ff fw-semibold text_gray hovermanue">
                   Featured
                 </a>
-              </li>
-              <li>
-                <a
-                  className="fs_16 ff fw-semibold text_gray hovermanue"
-                  href="#"
-                >
+              </Link>
+              <Link to={`/#testimonial`}>
+                <a className="fs_16 ff fw-semibold text_gray hovermanue">
                   Testimonial
                 </a>
-              </li>
+              </Link>
             </ul>
           </div>
           <div className="d-md-flex d-none align-items-center gap-3">
@@ -75,7 +67,10 @@ const CustomNavbar = () => {
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
-            <img height={60} src={black_logo} alt="web logo" />
+            <Link to="/">
+              {" "}
+              <img height={60} src={black_logo} alt="web logo" />
+            </Link>
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
@@ -85,21 +80,17 @@ const CustomNavbar = () => {
                 Home
               </a>
             </li>
-            <li className=" mt-3">
-              <a className="fs_16 ff fw-semibold text_gray hovermanue" href="#">
-                About us
-              </a>
-            </li>
-            <li className=" mt-3">
-              <a className="fs_16 ff fw-semibold text_gray hovermanue" href="#">
+
+            <Link to={`/#featured`}>
+              <a className="fs_16 ff fw-semibold text_gray hovermanue">
                 Featured
               </a>
-            </li>
-            <li className=" mt-3">
-              <a className="fs_16 ff fw-semibold text_gray hovermanue" href="#">
+            </Link>
+            <Link to={`/#testimonial`}>
+              <a className="fs_16 ff fw-semibold text_gray hovermanue">
                 Testimonial
               </a>
-            </li>
+            </Link>
             <li className=" mt-3">
               <button className="fs_16 d-md-none d-block fw-semibold rounded-2 py-3 custom_btn ff border-0 w-100">
                 Sign In
