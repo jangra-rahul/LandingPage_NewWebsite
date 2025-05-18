@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
 
           <u className="d-flex p-0 m-0 gap-4 align-items-center ">
-            <Link to="/privacy">
+            <Link to="/privacy-policy">
               <li
                 className="mb-0 pb-0 text-white ff fs_16 "
                 style={{ cursor: "pointer" }}
@@ -28,7 +28,7 @@ const Footer = () => {
                 Privacy Policy
               </li>
             </Link>
-            <Link to="/refund">
+            <Link to="refund-policy">
               <li
                 className="mb-0 pb-0 text-white ff fs_16 "
                 style={{ cursor: "pointer" }}
@@ -36,7 +36,7 @@ const Footer = () => {
                 Refund Policy
               </li>
             </Link>
-            <Link to="/terms">
+            <Link to="/terms-and-conditions">
               <li
                 className="mb-0 pb-0 text-white ff fs_16 "
                 style={{ cursor: "pointer" }}

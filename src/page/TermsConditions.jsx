@@ -111,7 +111,7 @@ const TermsConditions = () => {
             or exclusive gemstones, may only be available online and are subject
             to our Refund Policy:{" "}
             <span className=" text-primary">
-              &nbsp; https://thevedguru.com/refund &nbsp;
+              &nbsp; https://thevedguru.com/refund-policy &nbsp;
             </span>
             . Astrology consultations are facilitated by independent astrologers
             partnered with us, and while we aim for quality, results are not
@@ -141,7 +141,9 @@ const TermsConditions = () => {
             via the contact details provided. You must supply accurate and
             current billing and account information and update it promptly as
             needed. See our Refund Policy for more:{" "}
-            <span className=" text-primary">https://thevedguru.com/refund</span>
+            <span className=" text-primary">
+              https://thevedguru.com/refund-policy
+            </span>
             .
           </p>
 
@@ -191,7 +193,7 @@ const TermsConditions = () => {
             General Data Protection Regulation (GDPR) where relevant. For
             detailed information, please refer to our Privacy Policy:
             <span className=" text-primary">
-              &nbsp; https://thevedguru.com/privacy
+              &nbsp; https://thevedguru.com/privacy-policy
             </span>
             .
           </p>
