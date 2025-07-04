@@ -30,7 +30,7 @@ const DownloadApp = () => {
         fontWeight: "bold",
       }}
     >
-      Redirecting you to the app store...
+      Redirecting you to the store...
     </div>
   );
 };
