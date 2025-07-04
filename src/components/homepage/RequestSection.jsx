@@ -18,13 +18,14 @@ const RequestSection = () => {
           <br className="d-none d-lg-block" /> poojas, and powerful remedies.
         </p>
         <div className="d-flex position-relative z-index-1 justify-content-center align-items-center gap-md-2 gap-2 mt-5">
-          <img width={160} height={60} src={gPlay_icon} alt="gPlay_icon" />
-          <img
+          <a href="https://play.google.com/store/apps/details?id=com.vedguru.app" target="_blanck"><img width={160} height={60} src={gPlay_icon} alt="gPlay_icon" /></a>
+          <a href="https://apps.apple.com/in/app/vedguru/id6746742016" target="_blanck">  <img
             width={160}
             height={47}
             src={appStore_Icon}
             alt="appStore_Icon"
-          />
+          /></a>
+        
         </div>
         <img className="w-100  mt-5" src={requset_img} alt="requset_img" />
       </Container>
